@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+#unsupported-message {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+}
