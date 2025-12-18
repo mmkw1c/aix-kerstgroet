@@ -11,7 +11,7 @@ text-align: center;
 
 
 #unsupported-message {
-    /*display: none;*/
+    display: none;
     text-align: center;
     padding: 40px 20px;
 }
