@@ -1,8 +1,10 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Oswald,sans-serif;
     background: #f4f4f4;
 }
+
+
 
 #unsupported-message {
     display: none;
