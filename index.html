@@ -25,12 +25,19 @@
     </div>
 </main>
     <!-- 3D model -->
-    <model-viewer src="kerstgroet.glb"
+    <model-viewer id="lazy-load" camera-controls touch-action="pan-y" reveal="manual"  src="kerstgroet.glb"
                   camera-controls
                   auto-rotate
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   style="width: 100%; max-width: 600px; height: 80vh;">
+                          <div id="lazy-load-poster" slot="poster"></div>
+                  <div id="button-load" slot="poster">Load 3D Model</div>
     </model-viewer>
+
+                    <script>
+                  document.querySelector('#button-load').addEventListener('click',
+                    () => document.querySelector('#lazy-load').dismissPoster());
+                </script>
 </body>
 </html>
