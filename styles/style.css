@@ -80,6 +80,7 @@ model-viewer {
   animation: sneeuwVal 8s linear infinite;
 }
 
+
 @keyframes sneeuwVal {
   0% {
     transform: translateY(-50px);
@@ -88,6 +89,39 @@ model-viewer {
     transform: translateY(50px);
   }
 }
+
+
+.scene {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* sneeuwlaag */
+.scene::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.9) 0 2px, transparent 2px);
+  background-size: 10px 10px;
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  animation: sneeuwVal 8s linear infinite;
+}
+
+@keyframes sneeuwVal {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
 
 /*Lazy Load*/
 
