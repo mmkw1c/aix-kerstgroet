@@ -96,7 +96,7 @@ model-viewer {
                     right: 0;
                     top: 0;
                     bottom: 0;
-                    background-image: url("kerstgroeppreview.png");
+                    background-image: url("../kerstgroeppreview.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
