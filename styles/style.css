@@ -123,6 +123,13 @@ model-viewer {
 }
 
 /*Ander Sneeuw*/
+
+@property --y {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: -1%;
+}
+
 .snowfall,
 .snowfall::before,
 .snowfall::after {
